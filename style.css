@@ -1,0 +1,43 @@
+header h1 {
+    text-align: center;
+}
+
+input:first-of-type {
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid blue;
+    outline: none;
+}
+
+input:valid, select:valid, textarea:valid {
+    border: 2px solid rgb(135, 22, 22);
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border: 2px solid rgb(106, 8, 8);
+}
+
+button {
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+.radio-group input[type="radio"]:checked {
+    border: 2px solid blue;
+    background-color: lightblue;
+    box-shadow: 0 0 5px blue;
+}
+
+.radio-group input[type="radio"]:checked + label{
+    color: blue;
+    font-weight: bold;
+}

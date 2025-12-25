@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Job Application Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Job Application Form</h1>
+        </header>
+        <div class="container">
+            <form action="https://formspree.io/f/mlgrqkbq" method="POST">
+                <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="position">Select a position</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                    <option value="manager">Manager</option>
+                </select>
+                </div>
+                <fieldset class="radio-group">
+                    <legend>Availability:</legend>
+                    <input type="radio" id="fulltime" name="availability" value="fulltime">
+                    <label for="fulltime">Full-Time</label>
+                    <input type="radio" id="parttime" name="availability" value="parttime">
+                    <label for="parttime">Part-Time</label>
+                </fieldset>
+                <label for="reason">Why do you want this job?</label>
+                <textarea id="reason" name="reason" placeholder="Write your motivation" rows="10" cols="30" required></textarea>
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+    </body>
+</html>
